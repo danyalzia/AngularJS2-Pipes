@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<p>Date is {{ newdate | date }}</p>
+<p>Date is {{ newdate | date:"MM/dd/yy" }}</p>
+<p>Date is {{ newdate | date:'mediumDate' }}</p>
+<p>Date is {{ newdate | date:'yMMMMd' }}</p>
+<p>Date is {{ newdate | date:'shortTime' }}</p>
+<p>Date is {{ newdate | date | uppercase}}</p>
+
+<p>Square of {{number}} is {{ number | square }}</p>
+
+<p>My name is <strong>{{ name | capitalize }}</strong>.</p>
+
+<h1>Async</h1>
+<p>{{ promise | async }}</p>

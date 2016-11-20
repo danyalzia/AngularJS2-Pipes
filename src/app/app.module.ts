@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { SquarePipe } from './square.pipe';
+import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SquarePipe,
+	CapitalizePipe
   ],
   imports: [
     BrowserModule,
